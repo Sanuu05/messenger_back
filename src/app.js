@@ -15,10 +15,6 @@ app.use(cors())
 const server = http.createServer(app)
 const io= socketio(server)
 io.on('connection',(socket)=>{
-    // console.log('connected sucess',socket.id)
-    // socket.on('msgn',(msg)=>{
-    //     console.log(msg)
-    // })
 })
 
 app.use((req, res, next) => {
@@ -43,4 +39,4 @@ server.listen(port, () => {
     console.log(`server running at ${port}`)
    
 })
-// const io = require('socket.io')(http)
+
