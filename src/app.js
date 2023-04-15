@@ -2,7 +2,6 @@ require('dotenv').config()
 const express = require('express')
 const app = express();
 const port = process.env.PORT|| 5555
-// process.env.PORT||
 const db = require('./db/db')
 const user = require('./routes/user')
 const msg = require('./routes/message')
